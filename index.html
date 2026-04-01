@@ -74,11 +74,23 @@ nav{
 .hero-bg{
   position:absolute;inset:0;z-index:0;
   background: linear-gradient(90deg, var(--cream) 0%, var(--cream) 50%, transparent 85%),
-    url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1000&q=80") no-repeat right center;
-  background-size: auto, 900px auto;
-  background-position: center, right center;
+    url("https://images.unsplash.com/photo-1579027989667-026e1dbf534b?w=1000&q=80") no-repeat center;
+  background-size: auto, contain;
+  background-position: center, center;
 }
+@media(min-width:768px){
+  .hero-bg{
+    background-size: auto, 850px auto;
+    background-position: center, right center;
+  }
 }
+
+
+
+
+
+
+
 .hero-ring{
   position:absolute;right:-140px;top:50%;transform:translateY(-50%);
   width:520px;height:520px;border-radius:50%;
