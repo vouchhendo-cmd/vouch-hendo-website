@@ -73,24 +73,20 @@ nav{
 }
 .hero-bg{
   position:absolute;inset:0;z-index:0;
-  background: linear-gradient(90deg, var(--cream) 0%, var(--cream) 50%, transparent 85%),
-    url("https://images.unsplash.com/photo-1579027989667-026e1dbf534b?w=1000&q=80") no-repeat center;
-  background-size: auto, contain;
-  background-position: center, center;
+  background:
+    linear-gradient(90deg, var(--cream) 0%, var(--cream) 50%, rgba(250,247,240,0.3) 100%),
+    url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1200&h=800&fit=crop") no-repeat;
+  background-size: auto, 100% auto;
+  background-position: center, right center;
+  background-attachment: fixed;
 }
-@media(min-width:768px){
+@media(max-width:767px){
   .hero-bg{
-    background-size: auto, 850px auto;
-    background-position: center, right center;
+    background-size: auto, contain;
+    background-position: center, center;
+    background-attachment: scroll;
   }
 }
-
-
-
-
-
-
-
 .hero-ring{
   position:absolute;right:-140px;top:50%;transform:translateY(-50%);
   width:520px;height:520px;border-radius:50%;
